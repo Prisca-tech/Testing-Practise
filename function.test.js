@@ -1,5 +1,5 @@
 const { describe } = require('yargs');
-const { stringlength, reverseString, calculator } = require ('./function.js')
+const { stringlength, reverseString, capitalize, calculator } = require ('./function.js')
 
 test('check length of string yes to equal 3', () => {
   expect(stringlength("yes")).toEqual(3);
@@ -18,6 +18,11 @@ expect(reverseString).toBeDefined();
 test('string reverses', () => {
 expect(reverseString('hello')).toEqual('olleh')
 });
+
+test('check if string is capitalized', () => {
+	expect(capitalize("yes")).toBe("Yes");
+  
+  });
 
 describe('calculator', () => {
 	it('should add two numbers', () => {
@@ -44,4 +49,5 @@ describe('calculator', () => {
 	}
 	);
 
-})
+});
+

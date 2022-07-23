@@ -14,7 +14,13 @@ function reverseString(string) {
     let str = string.split('').reverse().join("");
     return str;
 }
-
+// task four
+function capitalize(string) {
+    let str = string.split(' ')
+   str.forEach(element => {str.push(element[0].toUpperCase() + element.slice(1, element.length))})
+    return str;
+     
+}
 //task three
  
 class calculator{
@@ -35,7 +41,6 @@ class calculator{
     division(a, b){
     div = a / b;
     }
-}
+};
 
-module.exports = { stringlength, reverseString, calculator }
- 
+ module.exports = { stringlength, reverseString, capitalize, calculator};
